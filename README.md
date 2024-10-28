@@ -13,9 +13,10 @@ int decimal = (int)strtol(hex_str, &end_ptr, 16);
 字符串拼接函数：strcat(), wcscat(), strncat(), wcsncat()
 
 字符串格式化输出函数：sprintf(), swprintf(), vsprintf(), vswprintf(), snprintf(), vsnprintf()
+安全：int snprintf_s(char *str, rsize_t size, const char *format, ...); 用例：snprintf_s(TotalLength, sizeof(TotalLength), "%ld", DecimalLong)
 
 字符串格式化输入函数：scanf(), wscanf(), vscanf(), vwscanf(), fscanf(), fwscanf(), vfscanf(),vfwscanf(), sscanf(), swscanf(), vsscanf(), vswscanf()
 
 stdin流输入函数：gets()
 
-3.十进制转十六、八进制。sprintf(hexStr, "%X", num);  sprintf(octalStr, "%o", num);
+3.十进制数据转字符串snprintf_s(TotalLength, sizeof(TotalLength), "%ld", DecimalLong); %X %o分别是转十六和八进制。
