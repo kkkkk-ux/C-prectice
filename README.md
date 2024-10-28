@@ -17,3 +17,5 @@ int decimal = (int)strtol(hex_str, &end_ptr, 16);
 字符串格式化输入函数：scanf(), wscanf(), vscanf(), vwscanf(), fscanf(), fwscanf(), vfscanf(),vfwscanf(), sscanf(), swscanf(), vsscanf(), vswscanf()
 
 stdin流输入函数：gets()
+
+3.十进制转十六、八进制。sprintf(hexStr, "%X", num);  sprintf(octalStr, "%o", num);
