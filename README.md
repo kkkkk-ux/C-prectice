@@ -13,7 +13,8 @@ int decimal = (int)strtol(hex_str, &end_ptr, 16);
 字符串拼接函数：strcat(), wcscat(), strncat(), wcsncat()
 
 字符串格式化输出函数：sprintf(), swprintf(), vsprintf(), vswprintf(), snprintf(), vsnprintf()
-安全：int snprintf_s(char *str, rsize_t size, const char *format, ...); 用例：snprintf_s(TotalLength, sizeof(TotalLength), "%ld", DecimalLong)
+安全：int sprintf_s(char *str, rsize_t size, const char *format, ...); 用例：sprintf_s(TotalLength, sizeof(TotalLength), "%ld", DecimalLong)
+安全：int snprintf_s(char *_DstBuf,size_t _DstSize,size_t _MaxCount,const char *_Format,...); 用例：sprintf_s(TotalLength, sizeof(TotalLength),3, "%ld", DecimalLong);
 
 字符串格式化输入函数：scanf(), wscanf(), vscanf(), vwscanf(), fscanf(), fwscanf(), vfscanf(),vfwscanf(), sscanf(), swscanf(), vsscanf(), vswscanf()
 
