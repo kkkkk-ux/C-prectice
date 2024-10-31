@@ -9,8 +9,10 @@ int decimal = (int)strtol(hex_str, &end_ptr, 16);
 
 字符串拷贝函数：strcpy(), wcscpy(), strncpy(), wcsncpy()
 安全：strncpy_s(char *dest, rsize_t dest_size, const char *src, rsize_t count);
+安全：strcpy_s(dest, dest_size, "xxx");
 
 字符串拼接函数：strcat(), wcscat(), strncat(), wcsncat()
+安全：strcat_s(char *strDest, size_t destMax, const char *strSrc); StrDest需要初始化，这个函数假定Dest以\0结尾。
 
 字符串格式化输出函数：sprintf(), swprintf(), vsprintf(), vswprintf(), snprintf(), vsnprintf()
 安全：int sprintf_s(char *str, rsize_t size, const char *format, ...); 用例：sprintf_s(TotalLength, sizeof(TotalLength), "%ld", DecimalLong)
@@ -21,3 +23,4 @@ int decimal = (int)strtol(hex_str, &end_ptr, 16);
 stdin流输入函数：gets()
 
 3.十进制数据转字符串snprintf_s(TotalLength, sizeof(TotalLength), "%ld", DecimalLong); %X %o分别是转十六和八进制。
+4. strtok没说不安全，strtok(dataPointer, " "); 注意分隔符不能用单引号。
