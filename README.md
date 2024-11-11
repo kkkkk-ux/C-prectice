@@ -22,4 +22,8 @@ int decimal = (int)strtol(hex_str, NULL, 16);
 
 stdin流输入函数：gets()
 
-4. strtok没说不安全，strtok(src, " "); 注意分隔符不能用单引号。
+3. strtok没说不安全，strtok(src, " "); 注意分隔符不能用单引号。
+4.malloc的字符串没有'\0'，要用strcpy_s(str, 16, "");初始化才能进行拼接和token。
+5.char str1[10]; char str2[]="hello";
+6.char str1[10]; str1 = "hello";是错误的。strcpy_s(str1,10,"hello");才是正确的。
+7. char xx[]一定得用双引号，表示字符串，有\0的；char xx和xx[1]只能使用单引号，因为只有一个字符没有\0；
