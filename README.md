@@ -27,3 +27,4 @@ stdin流输入函数：gets()
 5.char str1[10]; char str2[]="hello";
 6.char str1[10]; str1 = "hello";是错误的。strcpy_s(str1,10,"hello");才是正确的。
 7. char xx[]一定得用双引号，表示字符串，有\0的；char xx和xx[1]只能使用单引号，因为只有一个字符没有\0；
+8.qsort(arr,num,szie_arr_i,compare)。compare(const void* a, const void* b)，返回负数是a排在前面，升序。
