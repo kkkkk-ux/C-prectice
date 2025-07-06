@@ -29,3 +29,4 @@ stdin流输入函数：gets()
 7. char xx[]一定得用双引号，表示字符串，有\0的；char xx和xx[1]只能使用单引号，因为只有一个字符没有\0；
 8.qsort(arr,num,szie_arr_i,compare)。compare(const void* a, const void* b)，a小返回正数，a排在后面，降序。
 9.calloc(数量，大小)。
+10. zalloc是内核态，应该使用calloc。
