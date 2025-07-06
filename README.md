@@ -32,3 +32,4 @@ stdin流输入函数：gets()
 9.calloc(数量，大小)。
 10. zalloc是内核态，应该使用calloc。
 11. 动态分配的变量在vscode的debug watch中使用 *变量名@5 可以查看指定个数的元素。
+12. 各种数据结构比如优先级队列或者栈，在hw_cstl中有现成函数。
