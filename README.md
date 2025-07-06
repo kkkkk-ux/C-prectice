@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/9c56d396-981b-4d30-a10c-3df789dc2aa7)1.十六进制字符串转十进制字符串。
+1.十六进制字符串转十进制字符串。
 char *end_ptr;  // 定义一个指针变量来存储未处理部分的起始地址
 int decimal = (int)strtol(hex_str, NULL, 16);
 2.不安全函数和安全函数替换。
