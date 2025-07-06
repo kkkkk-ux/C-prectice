@@ -1,9 +1,10 @@
-1.十六进制字符串转十进制字符串。
+![image](https://github.com/user-attachments/assets/9c56d396-981b-4d30-a10c-3df789dc2aa7)1.十六进制字符串转十进制字符串。
 char *end_ptr;  // 定义一个指针变量来存储未处理部分的起始地址
 int decimal = (int)strtol(hex_str, NULL, 16);
 2.不安全函数和安全函数替换。
 以下列出了部分内存操作类不安全函数：
 内存拷贝函数：memcpy(), wmemcpy(), memmove(), wmemmove()
+安全：memcpy_s(void *dst, size_t dst缓冲区大小, const void *src, size_t 复制的字节数)
 
 内存初始化函数：memset()
 
