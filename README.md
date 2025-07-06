@@ -31,3 +31,4 @@ stdin流输入函数：gets()
 8.qsort(arr,num,szie_arr_i,compare)。compare(const void* a, const void* b)，a小返回正数，a排在后面，降序。
 9.calloc(数量，大小)。
 10. zalloc是内核态，应该使用calloc。
+11. 动态分配的变量在vscode的debug watch中使用 *变量名@5 可以查看指定个数的元素。
